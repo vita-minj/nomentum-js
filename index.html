@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ's Chrome App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="flex">
+        <header>
+            <div id="title">MJ's Chrome App</div>
+            <div id="weather">
+                <span></span>
+            </div>
+        </header>
+        <content>
+            <form div class="hidden" id="login-form">
+                <h1>Hello, what's your name?</h1>
+                <input 
+                required
+                maxlength="15"
+                autofocus
+                type="text">
+            </form>
+            <h2 id="clock"> 00 : 00 : 00 </h2>
+            <h1 class="hidden" id="greeting"></h1>
+        </content>
+        <footer>
+            <div id="city"></div>
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+            <button id="todo-btn">To-Do</button>
+        </footer>
+    </div>
+    <div id="todo-popup" class="hidden">
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required />
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+    
+    <form></form>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/qoutes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
