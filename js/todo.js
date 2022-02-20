@@ -6,7 +6,7 @@ const todoPopup = document.querySelector("#todo-popup");
 
 const TODOS_KEY = "toDos";
 
-let toDos = []; //계속해서 업데이트 할 수 있게 하기 위해 let을 씀
+let toDos = [];
 
 todoBtn.addEventListener("click", ((event) => todoPopup.classList.toggle("hidden")));
 
@@ -22,8 +22,8 @@ function completeTodo(event){
 function deleteToDo(event) {
     const li = event.target.parentElement.parentElement;
     li.remove();
-    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id)); //db에서 지운후
-    saveToDos(); //그 상태를 localStorage에 저장
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id)); 
+    saveToDos(); 
 }
 
 function paintToDo(newToDo) {
@@ -48,7 +48,7 @@ function paintToDo(newToDo) {
 function handleToDoSubmit(event) {
     event.preventDefault();
     const newToDo = toDoInput.value;
-    toDoInput.value = ""; //엔터 클릭시 인풋내용 초기화
+    toDoInput.value = ""; 
     const newToDoObj = {
         text:newToDo,
         id:Date.now(),
