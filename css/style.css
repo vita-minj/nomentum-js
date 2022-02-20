@@ -1,20 +1,12 @@
 body {
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: 500px;
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
     font-family: 'bod';
     font-size: 16pt;
-}
-#flex {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+    overflow: hidden;
 }
 .hidden {
     display: none;
@@ -24,7 +16,18 @@ body {
     left: 0;
     right: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
+}
+#flex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 header {
     position: fixed;
