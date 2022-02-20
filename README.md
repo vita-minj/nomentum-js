@@ -1,3 +1,3 @@
-# vita-minjeong.github.io
+# vita-minj.github.io
 ### This is a clone of the Chrome App 
-Link : https://vita-minjeong.github.io/
+Link : https://vita-minj.github.io/
