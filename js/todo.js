@@ -14,7 +14,7 @@ function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 function completeTodo(event){
-    const li = event.target.parentElement.parentElement;
+    const li = event.target.parentElement;
     li.classList.toggle("complete");
     saveToDos();
 }
